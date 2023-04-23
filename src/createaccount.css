@@ -1,0 +1,103 @@
+* {
+  color: white;
+}
+
+body {
+  background: linear-gradient(90deg, #001E3C 0%, #0A1929 100%);
+}
+
+h1 {
+  text-align: center;
+}
+
+.welcome_h1 {
+  color: #66B2FF
+}
+
+.welcome_h2 {
+  margin-top: -2vh;
+  margin-bottom: 6vh;
+}
+
+.App-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.temconta {
+  font-size: small;
+}
+
+a {
+  color: #66B2FF;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #C2E0FF;
+}
+
+form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+}
+
+input {
+  margin-bottom: 2vh;
+  border-style: none;
+  border-bottom: 2px white solid;
+  background-color: transparent;
+  padding: 2vh;
+}
+
+input:focus, textarea:focus, select:focus{
+  outline: none;
+  background-color: transparent;
+}
+
+input:valid {
+  border-bottom: 2px #12CD3B solid;
+  transition: border-bottom 0.8s;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  border-bottom: 2px #CD1212 solid;
+  transition: border-bottom 0.8s;
+}
+
+button {
+  margin-top: 5vh;
+  background-color: transparent;
+  border: 2px #66B2FF solid;
+  border-radius: 10px;
+  padding: 15px 6vh;
+  font-size: x-large;
+  transition: background 1s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #66B2FF;
+  color: white;
+}
+
+footer {
+  font-size: small;
+  position:static;
+  margin-top: 8vh;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 400px) {
+  footer {
+    position: fixed;
+  }
+}
